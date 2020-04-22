@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Python Flask File Upload Example</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</head>
+<body background="/static/img.jpg"></body>
+<nav class="navbar navbar-expand-lg navbar-light bg-light " style="margin-bottom: 30px;">
+    <div class="container-fluid">
+        <div class="collapse  navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link navbar-brand" href="upload.html">Home</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link navbar-brand" href="#">Link</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<div class="container container-fluid">
+    <header class="jumbotron">
+        <h1>Dynamic Slicing Tool </h1>
+        <p> Have fun debugging your software</p>
+    </header>
+</div>
+    <div class="container img-thumbnail" style="width: 30%;margin: 100px auto;padding: 10px;">
+        <h2>Select a file to upload</h2>
+        <form method="POST" action="/input" enctype="multipart/form-data" class="">
+            <div class="form-group">
+                <input class="form-control-file" type="file" id name="file" autocomplete="off" required>
+            </div>
+            <div class="form-group" >
+                <button class="btn btn-block btn-primary" type="submit" id="sub" value="submit">Submit</button>  
+            </div>
+            <img src="/static/Loader (1).gif" style="display: none;" id="img1" >
+        </form>
+    </div>    
+    <script type="text/javascript" src="jquery.js" ></script>
+</body>
+</html>

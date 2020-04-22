@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Result of Slicing</title>
+</head>
+<body>
+	<p>
+	{% with messages = get_flashed_messages() %}
+	  {% if messages %}
+		<ul class=flashes>
+		{% for message in messages %}
+		  <li>{{ message }}</li>
+		{% endfor %}
+		</ul>
+	  {% endif %}
+	{% endwith %}
+</p>
+	<ul>
+		{% for  i in range(0 , len) %}
+			<li>{{res[i]}}</li>
+		{% endfor %}
+	</ul>
+
+</body>
+</html>

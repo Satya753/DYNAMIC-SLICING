@@ -40,8 +40,13 @@ def upload_file():
 @app.route("/result", methods=['GET','POST'])
 def slicingc():
 	if request.method=='POST':
+<<<<<<< HEAD
 		a=(request.form['inp'])
 		slice.change_to_numbering(a)
+=======
+		a=int(request.form['inp'])
+		slice.dfs(a)
+>>>>>>> a1fe116de1e6b132b06315a1393b47d76bcdecee
 		res=[]
 		res=slice.print_result()	
 		slice.make_empty()
